@@ -1,0 +1,54 @@
+p {
+  margin: 0;
+  color: #0c785b;
+}
+.card_wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-family: "DM Sans", sans-serif;
+  padding: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 1rem 0;
+  background-color: #ffffff;
+  gap: 2rem;
+}
+.job_info_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.job_title_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.skills_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.job_info_wrapper img {
+  width: 75px;
+  border-radius: 50%;
+}
+.job_title {
+  font-weight: 600;
+  font-size: 18px;
+  /* letter-spacing: 0.8px; */
+  margin-top: 8px;
+}
+.skill {
+  background-color: #ceece4;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #0c785b;
+  font-weight: 600;
+}
+.skill:hover {
+  background-color: #0c785b;
+  color: #ffffff;
+  cursor: pointer;
+}
+.address{
+
+}
