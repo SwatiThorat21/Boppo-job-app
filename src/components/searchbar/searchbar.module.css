@@ -1,41 +1,41 @@
-.searchBar_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 1rem 3rem;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-    background-color: #ffffff;
+.searchBar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
 }
-.skill{
-    display: flex;
-    align-items: center;
+.skill {
+  display: flex;
+  align-items: center;
 }
-.closeIcon{
-    width: 17px;
-    padding: 7.2px;
-    background-color:#84e0c8;
-    color: #ffffff;
+.closeIcon {
+  width: 17px;
+  padding: 7.2px;
+  background-color: #84e0c8;
+  color: #ffffff;
 }
-.closeIcon:hover{
-    background-color: #000000;
-    cursor: pointer;
+.closeIcon:hover {
+  background-color: #000000;
+  cursor: pointer;
 }
-.skill_title{
-    padding: 5px;
-    background-color:#ceece4;
-    /* background-color:#0c785b; */
+.skill_title {
+  padding: 5px;
+  background-color: #ceece4;
+  /* background-color:#0c785b; */
 }
-.clear_search{
-    color: #0c785b;
+.clear_search {
+  color: #0c785b;
 }
-.clear_search:hover{
-    border-bottom: 2px solid #0c785b;
-    outline: none;
-    cursor: pointer;
+.clear_search:hover {
+  border-bottom: 2px solid #0c785b;
+  outline: none;
+  cursor: pointer;
 }
-.search_skills_container{
-    display: flex;
-    gap: 1rem;
+.search_skills_container {
+  display: flex;
+  gap: 1rem;
 }

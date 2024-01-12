@@ -9,8 +9,10 @@ export default function Card({ jobsList, setSkills, skills }) {
   return (
     <>
       {jobsList
-        .filter((jobList) =>
-          skills.length === 0 || jobList.skills.some((jobSkill) => skills.includes(jobSkill))
+        .filter(
+          (jobList) =>
+            skills.length === 0 ||
+            jobList.skills.some((jobSkill) => skills.includes(jobSkill))
         )
         .map((jobList) => (
           <div className={styles.card_wrapper} key={jobList._id.$oid}>
