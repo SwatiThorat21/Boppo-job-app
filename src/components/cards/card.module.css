@@ -11,6 +11,11 @@ p {
   margin: 1rem 0;
   background-color: #ffffff;
   gap: 2rem;
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease;
+}
+.card_wrapper:hover {
+  box-shadow: -5px 0 0 #0c785b;
 }
 .job_info_wrapper {
   display: flex;

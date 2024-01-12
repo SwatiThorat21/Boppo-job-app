@@ -1,19 +1,18 @@
 import styles from "./card.module.css";
 
-export default function Card({ jobsList, setSkills, skills}) {
-
-    function handleAddSkills(skill) {
-        setSkills((prevSkills) => {
-          return [...prevSkills, skill];
-        });
-        localStorage.setItem("skills", JSON.stringify([...skills, skill]));
-      }
-
+export default function Card({ jobsList, setSkills, skills }) {
+  function handleAddSkills(skill) {
+    setSkills((prevSkills) => [...prevSkills, skill]);
+    localStorage.setItem("skills", JSON.stringify([...skills, skill]));
+  }
 
   return (
     <>
-      {jobsList.map((jobList) => {
-        return (
+      {jobsList
+        .filter((jobList) =>
+          skills.length === 0 || jobList.skills.some((jobSkill) => skills.includes(jobSkill))
+        )
+        .map((jobList) => (
           <div className={styles.card_wrapper} key={jobList._id.$oid}>
             <div className={styles.job_info_wrapper}>
               <img src={jobList.companyImage} alt="logo"></img>
@@ -32,21 +31,18 @@ export default function Card({ jobsList, setSkills, skills}) {
               </div>
             </div>
             <div className={styles.skills_wrapper}>
-              {jobList.skills.map((skill, index) => {
-                return (
-                  <div
-                    key={index}
-                    className={styles.skill}
-                    onClick={() => handleAddSkills(skill)}
-                  >
-                    {skill}
-                  </div>
-                );
-              })}
+              {jobList.skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className={styles.skill}
+                  onClick={() => handleAddSkills(skill)}
+                >
+                  {skill}
+                </div>
+              ))}
             </div>
           </div>
-        );
-      })}
+        ))}
     </>
   );
 }

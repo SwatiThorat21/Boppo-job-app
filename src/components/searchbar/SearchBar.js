@@ -31,8 +31,8 @@ export default function SearchBar({ skills, setSkills }) {
             {skills.map((skill, index) => {
               return (
                 <>
-                  <div className={styles.skill} key={index}>
-                    <p key={index} className={styles.skill_title}>
+                  <div key={index} className={styles.skill}>
+                    <p className={styles.skill_title}>
                       {skill}
                     </p>
                     <img

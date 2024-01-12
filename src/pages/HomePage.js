@@ -4,10 +4,6 @@ import Card from "../components/cards/Card";
 import styles from "./homePage.module.css";
 
 export default function HomePage({ jobsList, setSkills, skills }) {
-  const filteredJobs = jobsList.filter((job) => {
-    return job.skills.some((jobSkill) => skills.includes(jobSkill));
-  });
-
   return (
     <>
       <div className={styles.home_container}>
